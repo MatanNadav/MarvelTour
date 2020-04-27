@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom'
+import HomePage from "./pages/HomePage/HomePage"
+import CharactersPage from "./pages/CharactersPage/CharactersPage"
+import CharacterDetailsPage from "./pages/CharacterDetailsPage/CharacterDetailsPage"
+import AppHeader from "./components/AppHeader/AppHeader"
+import CharacterFilter from "./components/CharacterFilter/CharacterFilter"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+          <AppHeader></AppHeader>
+          <CharacterFilter></CharacterFilter>
+        <Switch>
+          <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/characters" component={CharactersPage}></Route>
+          <Route path="/character/:id" render={({match})=>(
+            <CharacterDetailsPage id={match.params.id}></CharacterDetailsPage>    
+          )} />
+          {/* <Route exact path="/about" component={CharactersPage}></Route> */}
+        </Switch>
+      </HashRouter>
     </div>
   );
 }

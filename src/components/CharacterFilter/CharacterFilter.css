@@ -1,0 +1,65 @@
+.filter-container {
+    width: 100vw;
+    height: 40vh;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.box-container {
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(-225deg, rgb(248, 248, 248) 0%, rgb(134, 51, 51) 48%, rgb(246, 7, 7) 100%);
+    box-shadow: inset 0 0 30px #000000;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.charSearch {
+    font-family: "Alegreya";
+    width: 90%;
+    height: 10%;
+    background: whitesmoke;
+    outline: none;
+}
+
+.btn-char-search {
+    border: 0px;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-family:"AlegreyaBold" ;
+    font-size: 20px;
+}
+
+.btn-char-search:hover {
+    cursor: pointer;
+}
+.btn-char-search:hover::after {
+    content: " it"
+}
+
+.popular-container {
+    font-family: "AlegreyaBold";
+    height: 40%;
+    width: 100%
+
+}
+
+.popular-item {
+    font-family: "Alegreya";
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid rgb(53, 51, 51);
+}
+
+.popular-item:hover {
+    cursor: pointer;
+    background: rgb(53, 51, 51);
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+.preview-container {
+    margin: 3px;
+    padding: 3px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.preview-container img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.char-name {
+    position: absolute;
+    background: linear-gradient(-225deg, rgb(248, 248, 248) 0%, rgb(134, 51, 51) 48%, rgb(246, 7, 7) 100%);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-wrap:hover .char-name {
+    opacity: 0.7;
+    visibility: visible;
+}

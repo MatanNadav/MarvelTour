@@ -1,0 +1,50 @@
+
+h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+.details-container {
+    max-width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.head-container {
+    box-shadow: 0px 0px 21px 21px rgba(0,0,0,0.8);
+    background: whitesmoke;
+}
+
+.head-container img {
+    max-width:90%;
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.body-container {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.links-list {
+    padding: 0;
+    margin: 0;
+}
+.links-list li {
+    display: inline;
+    padding: 10px;
+}
+
+.links-list li a {
+    color: black;
+    text-decoration: underline;
+}
+.comic-list {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+}
