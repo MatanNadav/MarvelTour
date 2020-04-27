@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-src/services/Config.js
 /node_modules
 /.pnp
 .pnp.js
@@ -13,6 +12,7 @@ src/services/Config.js
 /build
 
 # misc
+/src/services/Config.js
 .DS_Store
 .env.local
 .env.development.local
